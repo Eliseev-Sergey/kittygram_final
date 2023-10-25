@@ -56,12 +56,6 @@ jobs:
         cd frontend/
         npm run test
 
-# on:
-#   push:
-#     branches:
-#       - main
-
-# jobs:
   build_and_push_to_docker_hub:
     name: Push Docker image to DockerHub
     if: github.ref == 'refs/heads/main'
